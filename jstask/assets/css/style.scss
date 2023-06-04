@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+$font-family: 'Open Sans', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.general {
+  opacity: 0.902;
+  width: 440px;
+  margin: auto;
+  border-radius: 5px;
+  filter: drop-shadow(0px 8px 10px rgba(0, 1, 1, 0.26));
+  background-color: #ffffff;
+
+  .container {
+    width: 350px;
+    margin: auto;
+    padding: 35px 0;
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        font: bold 24px $font-family;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: #4f4f4f;
+      }
+
+      label {
+        font: bold 14px $font-family;
+        line-height: 28px;
+      }
+
+      > label {
+        opacity: 0.800;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #4f4f4f;
+        margin: 30px 0 10px;
+      }
+
+      .utility {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0 30px;
+
+        div {
+          display: flex;
+          align-items: center;
+        }
+
+        label {
+          color: #8b8b8b;
+          padding-left: 10px;
+        }
+
+        input[type="checkbox"] {
+          width: 21px;
+          height: 21px;
+        }
+
+        a {
+          font: bold 14px $font-family;
+          line-height: 28px;
+          color: #04a9f4;
+          text-align: right;
+        }
+      }
+
+      > input {
+        opacity: 0.702;
+        width: 351px;
+        height: 50px;
+        border-radius: 3px;
+        background-color: rgba(255, 255, 255, 0.7019607843137254);
+        border: 1px solid #d8d8d8;
+        padding: 20px;
+        font: 300 18px $font-family;
+        color: #555;
+      }
+
+      input[type="submit"] {
+        width: 352px;
+        height: 55px;
+        border-radius: 4px;
+        border: none;
+        filter: drop-shadow(0px 3px 0px #0075aa);
+        background-color: #0896d7;
+        font: bold 22px $font-family;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    button {
+      width: 170px;
+      height: 36px;
+      border: none;
+      border-radius: 6px;
+      font: bold 14px $font-family;
+      letter-spacing: 1px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+    }
+
+    button:first-child {
+      background-color: #3162a2;
+    }
+
+    button:last-child {
+      background-color: #00aaf4;
+    }
+  }
+}
